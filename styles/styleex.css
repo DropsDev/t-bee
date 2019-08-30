@@ -1,0 +1,42 @@
+thead {
+    background-color: #fafafa;
+}
+
+thead th {
+    text-transform: uppercase;
+    font-size: 13px;
+}
+
+.table td {
+    padding: 1.2rem;
+    font-size: 15px;
+    cursor: pointer;
+}
+
+.table.table-lg td {
+    padding: 1.5rem;
+}
+.page-title {
+    padding: 1rem;
+}
+.card-transparent{
+    background: transparent;
+    border:0
+
+}
+.text-large-h1.received{
+    font-size: 2rem;
+}
+.text-large-h1.pending{
+    font-size: 2rem;
+    color:#F8A061
+}
+.mh-500{
+    min-height: 500px;
+}
+.v-middle{
+    display: flex;
+    height: 100%;
+    justify-content: center;
+    align-items: center;
+}

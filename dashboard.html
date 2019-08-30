@@ -1,0 +1,321 @@
+<html lang="en">
+
+<head>
+    <title>Overview - Tech Bank</title>
+    <link href="styles/style.css" rel="stylesheet" />
+    <link href="styles/styleex.css" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css?family=Lato|Roboto&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div id="app">
+        <div class="layout-wrapper layout-2">
+            <div class="layout-inner">
+                <nav class="sidenav sidenav-vertical bg-sidenav-theme layout-sidenav">
+                    <div class="app-brand demo"><span class="app-brand-logo demo bg-primary"></span> <a href="/"
+                            class="app-brand-text demo sidenav-text font-weight-normal ml-2 router-link-active"
+                            style="padding: 20px 0px;">Brittle Bit Inc</a> <a href="javascript:void(0)"
+                            class="layout-sidenav-toggle sidenav-link text-large ml-auto"><i
+                                class="ion ion-md-menu align-middle"></i></a></div>
+                    <div class="sidenav-divider mt-0"></div>
+                    <div class="sidenav-inner py-1 ps">
+                        <div class="sidenav-item router-link-exact-active active"><a href="dashboard.html"
+                                class="sidenav-link"><i class="sidenav-icon ion ion-logo-buffer"></i>
+                                <div>Overview</div>
+                                <!---->
+                            </a></div>
+                        <div class="sidenav-item"><a href="transactions.html" class="sidenav-link"><i
+                                    class="sidenav-icon ion ion-md-quote"></i>
+                                <div>Transactions</div>
+                                <!---->
+                            </a></div>
+                        <div class="sidenav-item"><a href="payments.html" class="sidenav-link"><i
+                                    class="sidenav-icon ion ion-md-quote"></i>
+                                <div>Payments</div>
+                                <!---->
+                            </a></div>
+                        <div class="sidenav-item"><a href="audittrail.html" class="sidenav-link"><i
+                                    class="sidenav-icon ion ion-md-quote"></i>
+                                <div>Audit Trail</div>
+                                <!---->
+                            </a></div>
+                        <div class="sidenav-item"><a href="javascript:void(0)" class="sidenav-link sidenav-toggle"><i
+                                    class="sidenav-icon ion ion-md-speedometer"></i>
+                                <div>Settings</div>
+                                <!---->
+                            </a>
+                            <div class="sidenav-menu">
+                                <div class="sidenav-item">
+                                    <a href="/dashboard/settings/profile" class="sidenav-link">
+                                        <!---->
+                                        <div>Profile</div>
+                                        <!---->
+                                    </a>
+                                </div>
+                                <div class="sidenav-item">
+                                    <a href="/dashboard/settings/business" class="sidenav-link">
+                                        <!---->
+                                        <div>Business Info</div>
+                                        <!---->
+                                    </a>
+                                </div>
+                                <div class="sidenav-item">
+                                    <a href="/dashboard/settings/bankaccount" class="sidenav-link">
+                                        <!---->
+                                        <div>Bank Account</div>
+                                        <!---->
+                                    </a>
+                                </div>
+                                <div class="sidenav-item">
+                                    <a href="/dashboard/settings/apikeys" class="sidenav-link">
+                                        <!---->
+                                        <div>API Keys</div>
+                                        <!---->
+                                    </a>
+                                </div>
+                                <div class="sidenav-item">
+                                    <a href="/dashboard/settings/preference" class="sidenav-link">
+                                        <!---->
+                                        <div>Preference</div>
+                                        <!---->
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="ps__rail-x" style="left: 0px; bottom: 0px;">
+                            <div class="ps__thumb-x" tabindex="0" style="left: 0px; width: 0px;"></div>
+                        </div>
+                        <div class="ps__rail-y" style="top: 0px; right: 4px;">
+                            <div class="ps__thumb-y" tabindex="0" style="top: 0px; height: 0px;"></div>
+                        </div>
+                    </div>
+                </nav>
+                <div class="layout-container">
+                    <div class="layout-content">
+                        <div class="router-transitions container-fluid flex-grow-1 container-p-y">
+                            <div>
+                                <div class="page-title">
+                                    <div class="row">
+                                        <div class="col">
+                                            <h4 class="text-uppercase">Dashboard</h4>
+                                        </div>
+                                        <div class="col-auto">
+                                            <div class="btn-group b-dropdown dropdown show">
+                                                <button type="button" class="btn btn-primary dropdown-toggle">Create
+                                                    Payments</button>
+                                                <div role="menu" tabindex="-1" class="dropdown-menu show">
+                                                    <a role="button" target="_self" href="create-single.html"
+                                                        class="dropdown-item">Single Payments</a>
+                                                    <a role="button" target="_self" href="create-bulk.html"
+                                                        class="dropdown-item">Bulk Payments</a></div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <hr class="container-m-nx mt-0 mb-4">
+                                <div class="row">
+                                    <div class="col-sm-6">
+                                        <div class="card mb-4">
+                                            <div class="card-body">
+                                                <div class="d-flex align-items-center">
+                                                    <div class="lnr lnr-earth display-4 text-info"></div>
+                                                    <div class="ml-3">
+                                                        <div class="text-large-h1 received">&#8358;9,000.00</div>
+                                                        <div class="text-muted small">Total Amount Received</div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="card-footer">
+                                                <div class="row">
+                                                    <div class="col">
+                                                        <h5 class="m-0">From 10 Transactions</h5>
+                                                    </div>
+                                                    <div class="col text-right">
+                                                            <h6 class="m-0 text-uppercase"><a href="payment-detail.html" class="text-success">View Payments</a></h6>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-sm-6">
+                                        <div class="card mb-4">
+                                            <div class="card-body">
+                                                <div class="d-flex align-items-center">
+                                                    <div class="lnr lnr-earth display-4 text-info"></div>
+                                                    <div class="ml-3">
+                                                        <div class="text-large-h1 pending">&#8358;123,000.00</div>
+                                                        <div class="text-muted small">Pending Payments</div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="card-footer"> <div class="row">
+                                                    <div class="col">
+                                                        <h5 class="m-0">From 20 Pending Payments</h5>
+                                                    </div>
+                                                    <div class="col text-right">
+                                                        <h6 class="m-0 text-uppercase"><a href="payment-detail.html" class="text-success">View Payments</a></h6>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <hr class="container-m-nx mt-0 mb-4">
+                                <div class="card mb-4">
+                                    <h6 class="card-header with-elements">
+                                        <div class="card-header-title">Pending Payments</div>
+                                    </h6>
+                                    <div>
+                                        <div class="table-responsive">
+                                            <table class="table card-table">
+                                                <thead>
+                                                    <tr>
+                                                        <th>Customer</th>
+                                                        <th>Phone</th>
+                                                        <th>Email</th>
+                                                        <th>VNuban</th>
+                                                        <th>Reference</th>
+                                                        <th>Payment Date</th>
+                                                    </tr>
+                                                </thead>
+                                                <tbody>
+                                                    <tr class="">
+                                                        <td>iah9da89h</td>
+                                                        <td>23443876545</td>
+                                                        <td>a8@8ahd.co</td>
+                                                        <td>8000005818</td>
+                                                        <td>12345678765432343</td>
+                                                        <td>Last Monday at 12:18 AM</td>
+                                                    </tr>
+                                                    <tr class="">
+                                                        <td>qe</td>
+                                                        <td>9273737</td>
+                                                        <td>w@sd.com</td>
+                                                        <td>8000001212</td>
+                                                        <td>aqw</td>
+                                                        <td>08/18/2019</td>
+                                                    </tr>
+                                                    <tr class="">
+                                                        <td>Badmus Martell</td>
+                                                        <td>98102930934</td>
+                                                        <td>badmusmartell@westeros.gov</td>
+                                                        <td>8000001119</td>
+                                                        <td>WAPICID0012</td>
+                                                        <td>08/18/2019</td>
+                                                    </tr>
+                                                    <tr class="">
+                                                        <td>Badmus Martell</td>
+                                                        <td>98102930934</td>
+                                                        <td>badmusmartell@westeros.gov</td>
+                                                        <td>8000001016</td>
+                                                        <td>00000000003</td>
+                                                        <td>08/18/2019</td>
+                                                    </tr>
+                                                    <tr class="">
+                                                        <td>Badmus Martell</td>
+                                                        <td>98102930934</td>
+                                                        <td>badmusmartell@westeros.gov</td>
+                                                        <td>8000000916</td>
+                                                        <td>00000000003</td>
+                                                        <td>08/18/2019</td>
+                                                    </tr>
+                                                    <tr class="">
+                                                        <td>Badmus Martell</td>
+                                                        <td>98102930934</td>
+                                                        <td>badmusmartell@westeros.gov</td>
+                                                        <td>8000000813</td>
+                                                        <td>WAPICID00124</td>
+                                                        <td>08/18/2019</td>
+                                                    </tr>
+                                                    <tr class="">
+                                                        <td>Badmus Martell</td>
+                                                        <td>98102930934</td>
+                                                        <td>badmusmartell@westeros.gov</td>
+                                                        <td>8000000710</td>
+                                                        <td>1243565432</td>
+                                                        <td>08/18/2019</td>
+                                                    </tr>
+                                                    <tr class="">
+                                                        <td>Badmus Martell</td>
+                                                        <td>98102930934</td>
+                                                        <td>badmusmartell@westeros.gov</td>
+                                                        <td>8000000617</td>
+                                                        <td>WAPICID76232</td>
+                                                        <td>08/18/2019</td>
+                                                    </tr>
+                                                    <tr class="">
+                                                        <td>Badmus Martell</td>
+                                                        <td>98102930934</td>
+                                                        <td>badmusmartell@westeros.gov</td>
+                                                        <td>8000000514</td>
+                                                        <td>WAPICID0012</td>
+                                                        <td>08/18/2019</td>
+                                                    </tr>
+                                                    <tr class="">
+                                                        <td>Badmus Martell</td>
+                                                        <td>98102930934</td>
+                                                        <td>badmusmartell@westeros.gov</td>
+                                                        <td>8000000411</td>
+                                                        <td>WAPICID0012</td>
+                                                        <td>08/18/2019</td>
+                                                    </tr>
+                                                </tbody>
+                                            </table>
+                                        </div>
+                                    </div>
+                                    <!---->
+                                    <!---->
+                                </div>
+                                <hr class="container-m-nx mt-0 mb-4">
+                                <div class="card mb-4">
+                                    <!---->
+                                    <!---->
+                                    <h6 class="card-header with-elements">
+                                        <div class="card-header-title">Completed Transactions</div>
+                                    </h6>
+                                    <div>
+                                        <div class="table-responsive">
+                                            <table class="table card-table">
+                                                <thead>
+                                                    <tr>
+                                                        <th>Reference</th>
+                                                        <th>Nuban</th>
+                                                        <th>Amount</th>
+                                                        <th>Charge</th>
+                                                        <th>Date initiated</th>
+                                                    </tr>
+                                                </thead>
+                                                <tbody>
+                                                    <tr class="">
+                                                        <td>f03b0722b5badf05bdc28ca0b825ada94fb87356d1ba6161d222485f48184d04
+                                                        </td>
+                                                        <td>8000000112</td>
+                                                        <td>NGN 4,500.00</td>
+                                                        <td>099 - 20192020293</td>
+                                                        <td>08/18/2019</td>
+                                                    </tr>
+                                                    <tr class="">
+                                                        <td>e8a07b480e80ab8e7d04a6a1946d2cbee89e06fc0964361b25f1b1be3a7ab09e
+                                                        </td>
+                                                        <td>8000000112</td>
+                                                        <td>NGN 4,500.00</td>
+                                                        <td>099 - 20192020293</td>
+                                                        <td>08/18/2019</td>
+                                                    </tr>
+                                                </tbody>
+                                            </table>
+                                        </div>
+                                    </div>
+                                    <!---->
+                                    <!---->
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+<script src="js/jquery.js"></script>
+
+</html>

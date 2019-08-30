@@ -1,0 +1,341 @@
+<html lang="en">
+
+<head>
+    <title>Overview - Tech Bank</title>
+    <link href="styles/style.css" rel="stylesheet" />
+    <link href="styles/styleex.css" rel="stylesheet" />
+</head>
+
+<body>
+    <div id="app">
+        <div class="layout-wrapper layout-2">
+            <div class="layout-inner">
+                <nav class="sidenav sidenav-vertical bg-sidenav-theme layout-sidenav">
+                    <div class="app-brand demo"><span class="app-brand-logo demo bg-primary"></span> <a href="/"
+                            class="app-brand-text demo sidenav-text font-weight-normal ml-2 router-link-active"
+                            style="padding: 20px 0px;">Brittle Bit Inc</a> <a href="javascript:void(0)"
+                            class="layout-sidenav-toggle sidenav-link text-large ml-auto"><i
+                                class="ion ion-md-menu align-middle"></i></a></div>
+                    <div class="sidenav-divider mt-0"></div>
+                    <div class="sidenav-inner py-1 ps">
+                        <div class="sidenav-item"><a href="dashboard.html" class="sidenav-link"><i
+                                    class="sidenav-icon ion ion-logo-buffer"></i>
+                                <div>Overview</div>
+                                <!---->
+                            </a></div>
+                        <div class="sidenav-item"><a href="transactions.html" class="sidenav-link"><i
+                                    class="sidenav-icon ion ion-md-quote"></i>
+                                <div>Transactions</div>
+                                <!---->
+                            </a></div>
+                        <div class="sidenav-item"><a href="payments.html" class="sidenav-link"><i
+                                    class="sidenav-icon ion ion-md-quote"></i>
+                                <div>Payments</div>
+                                <!---->
+                            </a></div>
+                        <div class="sidenav-item router-link-exact-active active"><a href="audittrail.html"
+                                class="sidenav-link"><i class="sidenav-icon ion ion-md-quote"></i>
+                                <div>Audit Trail</div>
+                            </a>
+                        </div>
+                        <div class="sidenav-item"><a href="javascript:void(0)" class="sidenav-link sidenav-toggle"><i
+                                    class="sidenav-icon ion ion-md-speedometer"></i>
+                                <div>Settings</div>
+                                <!---->
+                            </a>
+                            <div class="sidenav-menu">
+                                <div class="sidenav-item">
+                                    <a href="/dashboard/settings/profile" class="sidenav-link">
+                                        <!---->
+                                        <div>Profile</div>
+                                        <!---->
+                                    </a>
+                                </div>
+                                <div class="sidenav-item">
+                                    <a href="/dashboard/settings/business" class="sidenav-link">
+                                        <!---->
+                                        <div>Business Info</div>
+                                        <!---->
+                                    </a>
+                                </div>
+                                <div class="sidenav-item">
+                                    <a href="/dashboard/settings/bankaccount" class="sidenav-link">
+                                        <!---->
+                                        <div>Bank Account</div>
+                                        <!---->
+                                    </a>
+                                </div>
+                                <div class="sidenav-item">
+                                    <a href="/dashboard/settings/apikeys" class="sidenav-link">
+                                        <!---->
+                                        <div>API Keys</div>
+                                        <!---->
+                                    </a>
+                                </div>
+                                <div class="sidenav-item">
+                                    <a href="/dashboard/settings/preference" class="sidenav-link">
+                                        <!---->
+                                        <div>Preference</div>
+                                        <!---->
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="ps__rail-x" style="left: 0px; bottom: 0px;">
+                            <div class="ps__thumb-x" tabindex="0" style="left: 0px; width: 0px;"></div>
+                        </div>
+                        <div class="ps__rail-y" style="top: 0px; right: 4px;">
+                            <div class="ps__thumb-y" tabindex="0" style="top: 0px; height: 0px;"></div>
+                        </div>
+                    </div>
+                </nav>
+                <div class="layout-container">
+                    <div class="layout-content">
+                        <div class="router-transitions container-fluid flex-grow-1 container-p-y">
+                            <div>
+                                <div class="page-title">
+                                    <h4 class="text-uppercase">Audit Trail</h4>
+                                </div>
+                                <hr class="container-m-nx mt-0 mb-4">
+                                <div class="card mb-4">
+                                    <div class="card-header with-elements">
+                                        <div class="row w-100 p-3">
+                                            <div class="col">
+                                                <div class="card-header-title text-uppercase">Audit Trail</div>
+                                            </div>
+                                            <div class="col-auto">
+                                                <button type="submit" class="btn btn-primary btn-block" onclick="jsToggle('#filter')">Filter</button>
+                                            </div>
+                                            <div class="col-auto">
+                                                <button type="submit" class="btn btn-success btn-block">Export</button>
+                                            </div>
+                                        </div>
+                                        <div class="row w-100" id="filter" style="display: none">
+                                            <form class="w-100">
+                                                <div class="form-row" style="justify-content: flex-end;">
+                                                    <fieldset class="form-group col-md-2" id="__BVID__314"
+                                                        aria-labelledby="__BVID__314__BV_label_">
+                                                        <legend tabindex="-1" class="col-form-label pt-0"
+                                                            id="__BVID__314__BV_label_">Reference</legend>
+                                                        <div tabindex="-1" role="group"
+                                                            aria-labelledby="__BVID__314__BV_label_">
+                                                            <input type="text" class="form-control" id="__BVID__315">
+                                                        </div>
+                                                    </fieldset>
+                                                    <fieldset class="form-group col-md-2" id="__BVID__316"
+                                                        aria-labelledby="__BVID__316__BV_label_">
+                                                        <legend tabindex="-1" class="col-form-label pt-0"
+                                                            id="__BVID__316__BV_label_">VNuban</legend>
+                                                        <div tabindex="-1" role="group"
+                                                            aria-labelledby="__BVID__316__BV_label_"><input type="text"
+                                                                class="form-control" maxlength="10" id="__BVID__317">
+                                                            <!---->
+                                                            <!---->
+                                                            <!---->
+                                                        </div>
+                                                    </fieldset>
+                                                    <fieldset class="form-group col-md-2" id="__BVID__318"
+                                                        aria-labelledby="__BVID__318__BV_label_">
+                                                        <legend tabindex="-1" class="col-form-label pt-0"
+                                                            id="__BVID__318__BV_label_">Date</legend>
+                                                        <div tabindex="-1" role="group"
+                                                            aria-labelledby="__BVID__318__BV_label_">
+                                                            <div class="vdp-datepicker">
+                                                                <div class="input-group">
+                                                                    <!----> <input type="text" readonly="readonly"
+                                                                        autocomplete="off" class="form-control">
+                                                                    <!---->
+                                                                </div>
+                                                                <div class="vdp-datepicker__calendar"
+                                                                    style="display: none;">
+                                                                    <header><span class="prev">&lt;</span> <span
+                                                                            class="day__month_btn up">Aug 2019</span>
+                                                                        <span class="next">&gt;</span></header>
+                                                                    <div class=""><span
+                                                                            class="cell day-header">Sun</span><span
+                                                                            class="cell day-header">Mon</span><span
+                                                                            class="cell day-header">Tue</span><span
+                                                                            class="cell day-header">Wed</span><span
+                                                                            class="cell day-header">Thu</span><span
+                                                                            class="cell day-header">Fri</span><span
+                                                                            class="cell day-header">Sat</span> <span
+                                                                            class="cell day blank"></span><span
+                                                                            class="cell day blank"></span><span
+                                                                            class="cell day blank"></span><span
+                                                                            class="cell day blank"></span><span
+                                                                            class="cell day">1</span><span
+                                                                            class="cell day">2</span><span
+                                                                            class="cell day weekend sat">3</span><span
+                                                                            class="cell day weekend sun">4</span><span
+                                                                            class="cell day">5</span><span
+                                                                            class="cell day">6</span><span
+                                                                            class="cell day">7</span><span
+                                                                            class="cell day">8</span><span
+                                                                            class="cell day">9</span><span
+                                                                            class="cell day weekend sat">10</span><span
+                                                                            class="cell day weekend sun">11</span><span
+                                                                            class="cell day">12</span><span
+                                                                            class="cell day">13</span><span
+                                                                            class="cell day">14</span><span
+                                                                            class="cell day">15</span><span
+                                                                            class="cell day">16</span><span
+                                                                            class="cell day weekend sat">17</span><span
+                                                                            class="cell day weekend sun">18</span><span
+                                                                            class="cell day">19</span><span
+                                                                            class="cell day">20</span><span
+                                                                            class="cell day">21</span><span
+                                                                            class="cell day">22</span><span
+                                                                            class="cell day">23</span><span
+                                                                            class="cell day weekend sat">24</span><span
+                                                                            class="cell day weekend sun">25</span><span
+                                                                            class="cell day">26</span><span
+                                                                            class="cell day">27</span><span
+                                                                            class="cell day">28</span><span
+                                                                            class="cell day">29</span><span
+                                                                            class="cell day today">30</span><span
+                                                                            class="cell day weekend sat">31</span></div>
+                                                                </div>
+                                                                <div class="vdp-datepicker__calendar"
+                                                                    style="display: none;">
+                                                                    <header><span class="prev">&lt;</span> <span
+                                                                            class="month__year_btn up">2019</span> <span
+                                                                            class="next">&gt;</span></header> <span
+                                                                        class="cell month">January</span><span
+                                                                        class="cell month">February</span><span
+                                                                        class="cell month">March</span><span
+                                                                        class="cell month">April</span><span
+                                                                        class="cell month">May</span><span
+                                                                        class="cell month">June</span><span
+                                                                        class="cell month">July</span><span
+                                                                        class="cell month">August</span><span
+                                                                        class="cell month">September</span><span
+                                                                        class="cell month">October</span><span
+                                                                        class="cell month">November</span><span
+                                                                        class="cell month">December</span>
+                                                                </div>
+                                                                <div class="vdp-datepicker__calendar"
+                                                                    style="display: none;">
+                                                                    <header><span class="prev">&lt;</span> <span>2010 -
+                                                                            2019</span> <span class="next">&gt;</span>
+                                                                    </header> <span class="cell year">2010</span><span
+                                                                        class="cell year">2011</span><span
+                                                                        class="cell year">2012</span><span
+                                                                        class="cell year">2013</span><span
+                                                                        class="cell year">2014</span><span
+                                                                        class="cell year">2015</span><span
+                                                                        class="cell year">2016</span><span
+                                                                        class="cell year">2017</span><span
+                                                                        class="cell year">2018</span><span
+                                                                        class="cell year">2019</span>
+                                                                </div>
+                                                            </div>
+                                                            <!---->
+                                                            <!---->
+                                                            <!---->
+                                                        </div>
+                                                    </fieldset>
+                                                    <fieldset class="form-group col-md-1" id="__BVID__324"
+                                                        aria-labelledby="__BVID__324__BV_label_">
+                                                        <legend tabindex="-1" class="col-form-label pt-0"
+                                                            id="__BVID__324__BV_label_">.</legend>
+                                                        <div tabindex="-1" role="group"
+                                                            aria-labelledby="__BVID__324__BV_label_"><button
+                                                                type="submit"
+                                                                class="btn btn-primary btn-block">Filter</button>
+                                                            <!---->
+                                                            <!---->
+                                                            <!---->
+                                                        </div>
+                                                    </fieldset>
+                                                </div>
+                                            </form>
+                                        </div>
+                                    </div>
+                                    <div class="card-body p-0">
+                                        <div class="table-responsive">
+                                            <table class="table card-table">
+                                                <thead>
+                                                    <tr>
+                                                        <th>Date Generated</th>
+                                                        <th>Type</th>
+                                                        <th>Comments</th>
+                                                        <th>User</th>
+                                                    </tr>
+                                                </thead>
+                                                <tbody>
+                                                    <tr>
+                                                        <td>Last Wednesday at 2:28 PM</td>
+                                                        <td>preference</td>
+                                                        <td>Edited preference</td>
+                                                        <td>Adewale Jesufem</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>Last Wednesday at 2:28 PM</td>
+                                                        <td>preference</td>
+                                                        <td>Edited preference</td>
+                                                        <td>Adewale Jesufem</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>Last Monday at 1:18 AM</td>
+                                                        <td>vnuban</td>
+                                                        <td>Created VNUBAN</td>
+                                                        <td>Adewale Jesufem</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>Last Saturday at 2:46 AM</td>
+                                                        <td>preference</td>
+                                                        <td>Edited preference</td>
+                                                        <td>Adewale Jesufem</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>Last Saturday at 2:00 AM</td>
+                                                        <td>vnuban</td>
+                                                        <td>DEACTIVATED VNUBAN</td>
+                                                        <td>Adewale Jesufem</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>Last Saturday at 2:00 AM</td>
+                                                        <td>vnuban</td>
+                                                        <td>DEACTIVATED VNUBAN</td>
+                                                        <td>Adewale Jesufem</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>Last Saturday at 2:00 AM</td>
+                                                        <td>vnuban</td>
+                                                        <td>DEACTIVATED VNUBAN</td>
+                                                        <td>Adewale Jesufem</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>Last Saturday at 1:58 AM</td>
+                                                        <td>vnuban</td>
+                                                        <td>DEACTIVATED VNUBAN</td>
+                                                        <td>Adewale Jesufem</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>Last Saturday at 1:50 AM</td>
+                                                        <td>vnuban</td>
+                                                        <td>ACTIVATED VNUBAN</td>
+                                                        <td>Adewale Jesufem</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>Last Saturday at 1:50 AM</td>
+                                                        <td>vnuban</td>
+                                                        <td>DEACTIVATED VNUBAN</td>
+                                                        <td>Adewale Jesufem</td>
+                                                    </tr>
+                                                </tbody>
+                                            </table>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+<script src="js/jquery.js" type="text/javascript"></script>
+<script src="js/app.js" type="text/javascript"></script>
+</html>
